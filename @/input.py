@@ -20,7 +20,7 @@ class eventHandler(tcod.event.EventDispatch[Action]):
         if key == tcod.event.K_RIGHT:
             action = Movement(dx=1,dy=0)
         
-        elif key == tcod.event.K_ESCAPE
+        elif key == tcod.event.K_ESCAPE:
             action = EscapeAction()
         
         return action
